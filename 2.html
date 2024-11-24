@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Public API Data</title>
+</head>
+<body>
+    <h1>API Data</h1>
+    <ul>
+        {% for item in data %}
+            <li><strong>{{ item.title }}</strong>: {{ item.body }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

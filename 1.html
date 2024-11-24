@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraper</title>
+</head>
+<body>
+    <h1>YouTube Trending Videos</h1>
+    <ul>
+        {% for video in youtube %}
+            <li><a href="{{ video.link }}">{{ video.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <h1>Amazon Laptops</h1>
+    <ul>
+        {% for item in amazon %}
+            <li>{{ item.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
